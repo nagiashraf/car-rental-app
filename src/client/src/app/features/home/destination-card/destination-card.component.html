@@ -1,0 +1,22 @@
+<div
+  (click)="setPickupLocationInputValue(destination.city)"
+  class="aspect-[2/3] group/imgContainer relative overflow-hidden cursor-pointer"
+>
+  <img
+    [src]="destination.imgPath"
+    [alt]="destination.city"
+    class="w-full aspect-[2/3] object-cover object-bottom destination-img-transition group-hover/imgContainer:grayscale group-hover/imgContainer:scale-110"
+  />
+  <button
+    class="opacity-0 absolute left-1/2 -translate-x-1/2 bottom-0 w-max px-8 py-2 bg-accent text-white text-sm uppercase transition-all duration-300 hover:bg-white hover:text-accent group-hover/imgContainer:opacity-100 group-hover/imgContainer:bottom-8"
+    i18n="call-to-action button|the button of the call to action section"
+  >
+    book now
+  </button>
+</div>
+<h4
+  (click)="setPickupLocationInputValue(destination.city)"
+  class="mt-2 mx-auto w-fit transition-colors duration-300 hover:text-flash-white cursor-pointer"
+>
+  {{ destination.city }}
+</h4>

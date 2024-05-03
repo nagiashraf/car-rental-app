@@ -1,0 +1,53 @@
+<div cdkOverlayOrigin #overlayOrigin="cdkOverlayOrigin">
+  <input
+    #inputElement
+    type="text"
+    autocomplete="off"
+    appFloatingLabel="Pick-up Location"
+    (keydown)="onKeydown($event)"
+    (blur)="onTouched()"
+    [disabled]="isDisabled"
+  />
+  <ng-template
+    #overlay
+    cdkConnectedOverlay
+    [cdkConnectedOverlayOrigin]="overlayOrigin"
+    [cdkConnectedOverlayWidth]="panelWidth!"
+    [cdkConnectedOverlayMinWidth]="panelMinWidth!"
+    [cdkConnectedOverlayOffsetY]="overlayConfig.offsetY"
+    [cdkConnectedOverlayFlexibleDimensions]="overlayConfig.flexibleDimensions"
+    [cdkConnectedOverlayPush]="overlayConfig.push"
+    [cdkConnectedOverlayViewportMargin]="overlayConfig.viewportMargin"
+    [cdkConnectedOverlayLockPosition]="overlayConfig.lockPosition"
+    [cdkConnectedOverlayOpen]="showPanel"
+    (overlayOutsideClick)="onOverlayOutsideClick($event)"
+  >
+    <div @fadeAndSlideUp class="panel">
+      <ul *ngIf="searchResultLocations.length > 0">
+        <li *ngFor="let location of searchResultLocations; let i = index">
+          <app-location-option
+            [location]="location"
+            [class.active]="i === panelKeyManager.activeItemIndex"
+            (click)="selectOption(location)"
+            (mouseover)="panelKeyManager.setActiveItem(i)"
+          ></app-location-option>
+        </li>
+      </ul>
+      <div
+        *ngIf="
+          searchResultLocations.length === 0 && inputElement.value && !loading
+        "
+      >
+        <p
+          class="p-4"
+          i18n="
+            Locations autocomplete field search result|The message when no
+            results are found
+          "
+        >
+          No results found
+        </p>
+      </div>
+    </div>
+  </ng-template>
+</div>

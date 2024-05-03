@@ -1,0 +1,17 @@
+<ul
+  *ngIf="languages$ | async as languages"
+  cdkListbox
+  [cdkListboxValue]="[selectedLanguage.id]"
+  class="p-3 flex flex-col gap-1 bg-white shadow-2xl"
+>
+  <li
+    *ngFor="let language of languages"
+    [cdkOption]="language.id"
+    class="relative p-2 cursor-pointer"
+  >
+    <a class="flex gap-4 items-center">
+      <img [src]="language.flagImagePath" alt="flag" class="w-7 rounded-full" />
+      <span>{{ language.nativeName }}</span>
+    </a>
+  </li>
+</ul>

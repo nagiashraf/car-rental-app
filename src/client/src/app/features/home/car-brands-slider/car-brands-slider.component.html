@@ -1,0 +1,11 @@
+<div class="scroller py-5 overflow-hidden">
+  <div class="inner-scroller w-max flex items-center gap-14 animate-scroll">
+    <img
+      *ngFor="let image of images"
+      [src]="image"
+      alt="car brand"
+      class="w-48 h-24 object-contain"
+      i18n-alt="Car brand|The alternative text for the car brand image"
+    />
+  </div>
+</div>

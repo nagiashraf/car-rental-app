@@ -1,0 +1,57 @@
+<div cdkOverlayOrigin #overlayOrigin="cdkOverlayOrigin">
+  <input
+    #inputElement
+    type="text"
+    autocomplete="off"
+    appFloatingLabel="Drop-off Location"
+    (focus)="onFocus()"
+    (input)="onInput($any($event.target).value)"
+    (keydown)="onKeydown($event)"
+    (blur)="onTouched()"
+    [disabled]="isDisabled"
+  />
+  <ng-template
+    #overlay
+    cdkConnectedOverlay
+    [cdkConnectedOverlayOrigin]="overlayOrigin"
+    [cdkConnectedOverlayWidth]="panelWidth!"
+    [cdkConnectedOverlayMinWidth]="panelMinWidth!"
+    [cdkConnectedOverlayOffsetY]="overlayConfig.offsetY"
+    [cdkConnectedOverlayFlexibleDimensions]="overlayConfig.flexibleDimensions"
+    [cdkConnectedOverlayPush]="overlayConfig.push"
+    [cdkConnectedOverlayViewportMargin]="overlayConfig.viewportMargin"
+    [cdkConnectedOverlayLockPosition]="overlayConfig.lockPosition"
+    [cdkConnectedOverlayOpen]="showPanel"
+    (overlayOutsideClick)="onOverlayOutsideClick($event)"
+  >
+    <div @fadeAndSlideUp class="panel">
+      <ul *ngIf="filteredLocations.length > 0">
+        <li *ngFor="let location of filteredLocations; let i = index">
+          <app-location-option
+            [location]="location"
+            [class.active]="i === panelKeyManager.activeItemIndex"
+            (click)="selectOption(location)"
+            (mouseover)="panelKeyManager.setActiveItem(i)"
+          ></app-location-option>
+        </li>
+      </ul>
+      <p
+        *ngIf="
+          availableDropoffLocations.length < 1 && pickupLocation && !loading
+        "
+        class="p-4"
+        i18n="
+          No drop-off locations found|The message when no drop-off locations are
+          found for the selected pickup location
+        "
+      >
+        No drop-off locations found for
+        {{ pickupLocation.name }}
+      </p>
+      <!-- TODO: Add i18n -->
+      <p *ngIf="!pickupLocation" class="p-4">
+        Please, select a pickup location first.
+      </p>
+    </div>
+  </ng-template>
+</div>

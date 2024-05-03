@@ -1,0 +1,165 @@
+<form
+  [formGroup]="searchForm"
+  (ngSubmit)="onSubmit()"
+  class="search-form grid grid-cols-[2fr_1fr] md:grid-cols-[1fr_1fr_140px_90px_140px_90px_100px]
+    gap-0.5 bg-dark p-0.5 shadow-[0_0_24px_4px] shadow-accent"
+>
+  <div
+    class="col-[1_/_span_2]"
+    [ngClass]="{ 'md:col-auto': dropoffAtDifferentLocation }"
+  >
+    <span class="material-symbols-sharp">search</span>
+    <app-pickup-location-autocomplete
+      [panelMinWidth]="locationPanelMinWidth"
+      (loadingStateChanged)="pickupLocationsLoading = $event"
+      formControlName="pickupLocation"
+      i18n-label="
+        Pick-up location input field label|The label text for the pick-up
+        location input field
+      "
+    >
+    </app-pickup-location-autocomplete>
+    <mat-spinner *ngIf="pickupLocationsLoading" diameter="20"></mat-spinner>
+  </div>
+  <div *ngIf="dropoffAtDifferentLocation" class="col-[1_/_span_2] md:col-auto">
+    <span class="material-symbols-sharp">search</span>
+    <app-dropoff-location-autocomplete
+      [currentlySelectedPickupLocation]="
+        searchForm.get('pickupLocation')?.value
+      "
+      [pickupLocation$]="searchForm.get('pickupLocation')!.valueChanges"
+      [panelMinWidth]="locationPanelMinWidth"
+      (loadingStateChanged)="dropoffLocationsLoading = $event"
+      formControlName="dropoffLocation"
+    >
+    </app-dropoff-location-autocomplete>
+    <mat-spinner *ngIf="dropoffLocationsLoading" diameter="20"></mat-spinner>
+  </div>
+  <div>
+    <span class="material-symbols-sharp">calendar_today</span>
+    <input
+      [appDropdown]="pickupDateDropdown"
+      type="text"
+      appFloatingLabel="Pick-up date"
+      formControlName="pickupDate"
+      i18n-appFloatingLabel="
+        Pick-up date input field label|The label text for the pick-up date input
+        field
+      "
+    />
+    <app-input-dropdown
+      #pickupDateDropdown
+      [width]="datePanelWidth"
+      [displayValue]="formatDate"
+      (focusActiveOption)="focusActivePickupDate()"
+    >
+      <mat-calendar
+        #pickupDateCalendar
+        [(selected)]="selectedPickupDate"
+        [minDate]="minDate"
+        [maxDate]="maxDate"
+        [headerComponent]="datePickerHeader"
+        (selectedChange)="onPickupDateSelectedChange($event)"
+      ></mat-calendar>
+    </app-input-dropdown>
+    <!-- TODO: add touchUi in smaller screens -->
+  </div>
+  <div>
+    <span class="material-symbols-sharp">schedule</span>
+    <input
+      [appDropdown]="pickupTimeDropdown"
+      type="text"
+      appFloatingLabel="Time"
+      formControlName="pickupTime"
+      i18n-appFloatingLabel="
+        Pick-up time input field label|The label text for the pick-up time input
+        field
+      "
+    />
+    <app-input-dropdown
+      #pickupTimeDropdown
+      [displayValue]="formatTime"
+      (focusActiveOption)="pickupTimeOptionsPanel.focusActiveTimeOption()"
+    >
+      <app-time-options-panel
+        #pickupTimeOptionsPanel
+        [currentFormControlValue]="searchForm.get('pickupTime')?.value"
+        (timeOptionSelected)="pickupTimeDropdown.optionSelected.emit($event)"
+      ></app-time-options-panel>
+    </app-input-dropdown>
+  </div>
+  <div>
+    <span class="material-symbols-sharp">calendar_today</span>
+    <input
+      [appDropdown]="dropoffDateDropdown"
+      type="text"
+      appFloatingLabel="Drop-off date"
+      formControlName="dropoffDate"
+      i18n-appFloatingLabel="
+        Drop-off date input field label|The label text for the drop-off date
+        input field
+      "
+    />
+    <app-input-dropdown
+      #dropoffDateDropdown
+      [width]="datePanelWidth"
+      [displayValue]="formatDate"
+      (focusActiveOption)="focusActiveDropoffDate()"
+    >
+      <mat-calendar
+        #dropoffDateCalendar
+        [selected]="selectedDropoffDateRange"
+        [minDate]="minDate"
+        [maxDate]="maxDate"
+        (selectedChange)="onDropoffDateRangeSelectedChange($event)"
+      ></mat-calendar>
+    </app-input-dropdown>
+  </div>
+  <div>
+    <span class="material-symbols-sharp">schedule</span>
+    <input
+      [appDropdown]="dropoffTimeDropdown"
+      type="text"
+      appFloatingLabel="Time"
+      formControlName="dropoffTime"
+      i18n-appFloatingLabel="
+        Drop-off time input field label|The label text for the drop-off time
+        input field
+      "
+    />
+    <app-input-dropdown
+      #dropoffTimeDropdown
+      [displayValue]="formatTime"
+      (focusActiveOption)="dropoffTimeOptionsPanel.focusActiveTimeOption()"
+    >
+      <app-time-options-panel
+        #dropoffTimeOptionsPanel
+        [currentFormControlValue]="searchForm.get('dropoffTime')?.value"
+        (timeOptionSelected)="dropoffTimeDropdown.optionSelected.emit($event)"
+      ></app-time-options-panel>
+    </app-input-dropdown>
+  </div>
+  <button
+    type="submit"
+    class="col-[1_/_span_2] py-2 font-bold text-xl bg-dark text-white hover:bg-dark-medium md:col-auto"
+    i18n="Search button|The button for submitting the search form"
+  >
+    Search
+  </button>
+</form>
+<div class="mt-4 flex items-center gap-2 w-fit px-4 py-2 bg-white">
+  <input
+    type="checkbox"
+    id="differentDropoffLocation"
+    [(ngModel)]="dropoffAtDifferentLocation"
+  />
+  <label
+    for="differentDropoffLocation"
+    i18n="
+      Different drop-off location checkbox|the checkbox for choosing a drop-off
+      location different from the pick-up location
+    "
+  >
+    Drop off at a different location
+  </label>
+</div>

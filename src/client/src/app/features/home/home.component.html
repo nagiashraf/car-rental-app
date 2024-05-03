@@ -1,0 +1,91 @@
+<section class="bg-off-white">
+  <div class="container">
+    <div class="text-center mb-8">
+      <h1
+        class="text-[clamp(2.25rem,1rem+4vw,3rem)] leading-tight font-bold"
+        i18n="Intro header|The main title of the landing page"
+      >
+        Rent a car and explore the world
+      </h1>
+      <p class="text-lg" i18n="Intro subtitle|The subtitle of the landing page">
+        Find the best deals on car rental and enjoy your trip with comfort and
+        convenience.
+      </p>
+    </div>
+    <app-search-form></app-search-form>
+  </div>
+</section>
+
+<section>
+  <div>
+    <app-car-brands-slider></app-car-brands-slider>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div
+      class="grid gap-6 grid-cols-[repeat(auto-fill,minmax(min(375px,100%),1fr))]"
+    >
+      <app-benefit
+        *ngFor="let benefit of benefits"
+        [hText]="benefit.hText"
+        [pText]="benefit.pText"
+      ></app-benefit>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h1
+    class="text-center mb-12"
+    i18n="Section header|the title of the destinations section"
+  >
+    Top Worldwide Destinations
+  </h1>
+  <div class="container">
+    <div
+      class="rounded-scrollbar scroll-p pb-3 grid gap-8 grid-flow-col auto-cols-[min(90%,275px)] overflow-x-scroll snap-mandatory snap-x xs:auto-cols-[max(40%, 300px)] md:grid-flow-row md:auto-cols-auto md:grid-cols-[repeat(auto-fit,minmax(min(250px,100%),1fr))] md:overflow-x-hidden"
+    >
+      <app-destination-card
+        *ngFor="let dest of destinations"
+        [destination]="dest"
+        (cardClicked)="setPickupLocationInputValue(dest.city)"
+        class="snap-center"
+      ></app-destination-card>
+    </div>
+  </div>
+</section>
+
+<section class="relative">
+  <img
+    src="/assets/images/backgrounds/bg1.jpg"
+    alt=""
+    class="absolute start-0 end-0 top-0 bottom-0 -z-10 w-full h-full object-cover object-center ltr:-scale-x-100"
+  />
+  <div class="container py-24 flex flex-col items-start gap-20">
+    <h3
+      class="max-w-[60%] text-[clamp(2.25rem,1rem+4vw,3rem)] leading-tight text-white"
+      i18n="call-to-action heading"
+    >
+      Ready for a new adventure?
+    </h3>
+    <button
+      (click)="setPickupLocationInputValue('')"
+      class="px-8 py-2 border border-solid border-accent bg-accent text-white text-sm uppercase transition-all duration-300 hover:bg-transparent hover:border-white"
+      i18n="call-to-action button|the button of the call to action section"
+    >
+      book now
+    </button>
+  </div>
+</section>
+
+<section>
+  <h1
+    class="text-center mb-12"
+    i18n="Section header|the title of the frequently asked questions section"
+  >
+    Frequently Asked Questions
+  </h1>
+  <app-faq-accordion></app-faq-accordion>
+</section>

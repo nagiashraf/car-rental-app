@@ -1,0 +1,89 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use "@angular/material" as mat;
+// Plus imports for other components in your app.
+
+$primary-palette: (
+  (
+    50: #f5f5f5,
+    100: #e0e0e0,
+    200: #bdbdbd,
+    300: #9e9e9e,
+    400: #757575,
+    500: #666666,
+    600: #424242,
+    700: #333333,
+    800: #212121,
+    900: #000000,
+    contrast: (
+      50: #000000,
+      100: #000000,
+      200: #000000,
+      300: #000000,
+      400: #ffffff,
+      500: #ffffff,
+      600: #ffffff,
+      700: #ffffff,
+      800: #ffffff,
+      900: #ffffff,
+    ),
+  )
+);
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$client-primary: mat.define-palette($primary-palette, 700, 500);
+$client-accent: mat.define-palette($primary-palette, 700, 500);
+
+// The warn palette is optional (defaults to red).
+$client-warn: mat.define-palette(mat.$red-palette);
+
+// Define the typography for your theme
+$client-typography: mat.define-typography-config(
+  $headline-1:
+    mat.define-typography-level(3rem, 3rem, 700, "Raleway, sans-serif"),
+  $headline-2:
+    mat.define-typography-level(3rem, 3rem, 700, "Raleway, sans-serif"),
+  $headline-3:
+    mat.define-typography-level(3rem, 3rem, 700, "Raleway, sans-serif"),
+  $headline-4:
+    mat.define-typography-level(3rem, 3rem, 700, "Raleway, sans-serif"),
+  $headline-5:
+    mat.define-typography-level(2.25rem, 2.5rem, 700, "Raleway, sans-serif"),
+  $headline-6:
+    mat.define-typography-level(1.5rem, 2rem, 700, "Raleway, sans-serif"),
+  $subtitle-1:
+    mat.define-typography-level(1.25rem, 1.75rem, 400, "Raleway, sans-serif"),
+  $subtitle-2:
+    mat.define-typography-level(1.125rem, 1.75rem, 400, "Raleway, sans-serif"),
+  $body-1:
+    mat.define-typography-level(1.125rem, 1.75rem, 400, "Roboto, sans-serif"),
+  $body-2: mat.define-typography-level(1rem, 1.5rem, 400, "Roboto, sans-serif"),
+);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$client-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $client-primary,
+      accent: $client-accent,
+      warn: $client-warn,
+    ),
+    typography: $client-typography,
+  )
+);
+
+// Emit theme-dependent styles for common features used across multiple components.
+@include mat.core-theme($client-theme);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($client-theme);

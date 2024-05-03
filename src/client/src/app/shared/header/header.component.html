@@ -1,0 +1,41 @@
+<header class="bg-off-white">
+  <div class="container">
+    <nav class="flex justify-between items-center py-2">
+      <div class="max-w-[70px]">
+        <img
+          src="/assets/images/nagis-carrental-high-resolution-logo-black-transparent.png"
+          alt="logo"
+        />
+      </div>
+      <div class="flex items-center gap-4">
+        <div
+          class="p-1 rounded-full transition-colors duration-300 hover:bg-dark-light hover:text-white"
+        >
+          <button (click)="openCurrencyDialog()">
+            {{ (currentlySelectedCurrency$ | async)?.code }}
+          </button>
+        </div>
+        <div>
+          <app-dropdown-trigger
+            (dropdownOpened)="languagesPanel.focusActiveOption()"
+            class="flex justify-center items-center"
+          >
+            <div
+              class="display-value p-1 rounded-full transition-colors duration-300 hover:bg-dark-light"
+            >
+              <img
+                [src]="currentlySelectedLanguage.flagImagePath"
+                alt="current language flag"
+                class="w-7 rounded-full"
+              />
+            </div>
+            <app-languages-panel
+              #languagesPanel
+              class="dropdown-panel"
+            ></app-languages-panel>
+          </app-dropdown-trigger>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

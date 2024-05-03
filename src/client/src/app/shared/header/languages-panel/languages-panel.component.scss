@@ -1,0 +1,19 @@
+.cdk-option {
+  @apply transition-colors duration-300;
+}
+
+.cdk-option:hover,
+.cdk-option-active,
+.cdk-option[aria-selected="true"] {
+  @apply bg-off-white outline-none;
+}
+
+.cdk-option[aria-selected="true"]::after {
+  content: "check";
+  font-family: "Material Icons";
+  font-size: 1.25rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  inset-inline-end: 0.25rem;
+}

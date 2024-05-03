@@ -1,0 +1,26 @@
+.scroller {
+  mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent 100%
+  );
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent 100%
+  );
+}
+
+.scroller .inner-scroller {
+  animation: scroll 400s linear infinite reverse;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - 1.75rem)); // 1.75rem is half the gap
+  }
+}

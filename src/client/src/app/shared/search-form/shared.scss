@@ -1,0 +1,39 @@
+//inputs
+input[type="text"] {
+  width: 100%;
+  padding: 1rem 0;
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 0;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 4px 0 inset rgba(0, 0, 0, 0.75);
+}
+
+// dropdowns
+.panel {
+  @apply w-full bg-white shadow-lg overflow-y-auto;
+}
+
+.panel::-webkit-scrollbar {
+  width: 0.375rem;
+  height: 0.375rem;
+}
+
+.panel::-webkit-scrollbar-thumb {
+  @apply bg-dark-light rounded-3xl;
+}
+
+.panel::-webkit-scrollbar-thumb:hover {
+  @apply bg-dark-medium;
+}
+
+// cdk listbox options
+.cdk-option-active {
+  @apply bg-off-white;
+  outline: none;
+}
+
+.cdk-option[aria-selected="true"] {
+  @apply bg-dark text-white;
+}

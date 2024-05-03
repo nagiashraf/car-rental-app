@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth font-body text-lg font-normal text-dark;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+  }
+
+  h1,
+  h2 {
+    @apply font-bold text-dark;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl font-normal text-dark-medium;
+  }
+
+  h4 {
+    @apply text-lg font-normal text-dark-medium;
+  }
+}
+
+// body scroll bar
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-dark-medium rounded-3xl;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  @apply bg-dark;
+}
+
+// scroll bar
+.rounded-scrollbar::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.rounded-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-dark-light rounded-3xl;
+}
+
+.rounded-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-dark-medium;
+}
+
+// Material icons
+.material-symbols-sharp {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 200,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+input {
+  @apply outline-0 border-0 accent-dark;
+}
+
+// html,
+// body {
+//   height: 100%;
+// }
+
+// Overriding Angular Material mat-calendar styles
+.mat-calendar-body-cell-content {
+  border-radius: 0 0 0 0 !important;
+  transition:
+    background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mat-calendar-body-today:not(.mat-calendar-body-selected):not(
+    .mat-calendar-body-comparison-identical
+  ) {
+  border-color: transparent !important;
+}
+
+.mat-calendar-body-in-preview .mat-calendar-body-cell-preview {
+  @apply bg-off-white;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.mat-calendar-body-preview-start .mat-calendar-body-cell-preview,
+.mat-calendar-body-preview-end .mat-calendar-body-cell-preview {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}

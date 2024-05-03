@@ -1,0 +1,37 @@
+<div class="container mx-auto">
+  <cdk-accordion multi="true" class="block">
+    <cdk-accordion-item
+      *ngFor="let faq of faqs; let index = index"
+      #accordionItem="cdkAccordionItem"
+      class="block"
+      role="button"
+      tabindex="0"
+      [attr.id]="'accordion-header-' + index"
+      [attr.aria-expanded]="accordionItem.expanded"
+      [attr.aria-controls]="'accordion-body-' + index"
+    >
+      <div
+        class="flex justify-between items-center p-4 pb-0"
+        (click)="accordionItem.toggle()"
+      >
+        <h4>{{ faq.question }}</h4>
+        <span
+          [@indicatorFlip]="accordionItem.expanded ? 'expanded' : 'collapsed'"
+          class="material-symbols-sharp text-3xl"
+          >expand_more</span
+        >
+      </div>
+      <div
+        *ngIf="accordionItem.expanded"
+        [@expand]="'expanded'"
+        role="region"
+        [attr.id]="'accordion-body-' + index"
+        [attr.aria-labelledby]="'accordion-header-' + index"
+        style="box-sizing: border-box"
+      >
+        <p class="px-8 pb-4 cursor-auto">{{ faq.answer }}</p>
+      </div>
+      <hr />
+    </cdk-accordion-item>
+  </cdk-accordion>
+</div>

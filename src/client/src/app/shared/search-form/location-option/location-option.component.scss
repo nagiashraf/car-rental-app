@@ -1,0 +1,7 @@
+:host {
+  @apply block transition-colors duration-200;
+}
+
+:host.active {
+  @apply bg-off-white;
+}

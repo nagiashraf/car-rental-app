@@ -1,0 +1,47 @@
+<footer class="pt-12 bg-off-white text-dark-medium">
+  <div class="container">
+    <div
+      class="flex flex-col gap-4 justify-between items-center mb-5 xs:flex-row"
+    >
+      <div class="max-w-[150px]">
+        <img
+          src="/assets/images/nagis-carrental-high-resolution-logo-black-transparent.png"
+          alt="logo"
+          i18n-alt="Logo|The alternative text for the logo image"
+        />
+      </div>
+      <nav>
+        <ul class="text-center xs:text-start">
+          <li>
+            <a
+              class="transition-colors duration-300 hover:text-dark-light"
+              i18n="Navigation link"
+              href="#"
+              >Terms & Conditions</a
+            >
+          </li>
+          <li>
+            <a
+              class="transition-colors duration-300 hover:text-dark-light"
+              i18n="Navigation link"
+              href="#"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <p
+      i18n="
+        Footer text indicating the developer and an email address for contact
+      "
+    >
+      This web application was built by Nagi Ashraf, a .NET & Angular full-stack
+      developer. You can contact me at:
+      <a href="mailto:{{ email }}" class="hover:underline">{{ email }}</a>
+    </p>
+    <p i18n="Copyright|The copyright text" class="text-xs">
+      Copyright &copy; {{ currentYear }} Nagi. All rights reserved.
+    </p>
+  </div>
+</footer>

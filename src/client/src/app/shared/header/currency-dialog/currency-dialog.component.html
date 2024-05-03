@@ -1,0 +1,34 @@
+<div
+  class="flex justify-between items-center py-4 border-solid border-b-2 border-b-dark-light sticky top-0 z-10 bg-white"
+>
+  <h3
+    i18n="
+      Currencies dialog title|The title of the dialog to select the preferred
+      currency
+    "
+  >
+    Select Currency
+  </h3>
+  <button
+    (click)="closeDialog()"
+    class="flex justify-center items-center w-8 h-8 rounded-full transition-colors duration-300 hover:bg-off-white"
+  >
+    <span class="material-symbols-sharp text-3xl">close</span>
+  </button>
+</div>
+<ul
+  *ngIf="currentlySelectedCurrency && currencies"
+  cdkListbox
+  cdkListboxOrientation="horizontal"
+  [cdkListboxValue]="[currentlySelectedCurrency]"
+  [cdkListboxCompareWith]="compareCurrency"
+  (cdkListboxValueChange)="onOptionSelected($event)"
+  class="grid gap-x-4 gap-y-8 grid-cols-[repeat(auto-fill,minmax(200px,1fr))] my-8 text-sm"
+>
+  <li *ngFor="let currency of currencies" [cdkOption]="currency">
+    <div class="relative p-3 cursor-pointer">
+      <p class="mb-1">{{ currency.name }}</p>
+      <p>{{ currency.code }}</p>
+    </div>
+  </li>
+</ul>

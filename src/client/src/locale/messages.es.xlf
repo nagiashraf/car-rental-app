@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="es">
+    <body>
+      <trans-unit id="3813412937110121451" datatype="html">
+        <source>car brand</source>
+        <target>marca de coche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/car-brands-slider/car-brands-slider.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">The alternative text for the car brand image</note>
+        <note priority="1" from="meaning">Car brand</note>
+      </trans-unit>
+      <trans-unit id="285459728824018819" datatype="html">
+        <source> book now </source>
+        <target>reservar ahora</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/destination-card/destination-card.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.html</context>
+          <context context-type="linenumber">69,71</context>
+        </context-group>
+        <note priority="1" from="description">the button of the call to action section</note>
+        <note priority="1" from="meaning">call-to-action button</note>
+      </trans-unit>
+      <trans-unit id="2802452384367461200" datatype="html">
+        <source>How old do I need to be to rent a car?</source>
+        <target>¿Qué edad debo tener para alquilar un coche?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">age requirement</note>
+        <note priority="1" from="meaning">faq question</note>
+      </trans-unit>
+      <trans-unit id="7782593608319836089" datatype="html">
+        <source>The minimum age requirement for renting a car varies by location and car rental company. Typically, it&apos;s between 21 and 25 years old. Additional fees or restrictions may apply to renters under 25.</source>
+        <target>El requisito de edad mínima para alquilar un coche varía según la ubicación y la empresa de alquiler de coches. Normalmente, está entre 21 y 25 años. Pueden aplicarse tarifas adicionales o restricciones a los arrendatarios menores de 25 años.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">age requirement</note>
+        <note priority="1" from="meaning">faq answer</note>
+      </trans-unit>
+      <trans-unit id="395282380551680866" datatype="html">
+        <source>What documents do I need to rent a car?</source>
+        <target>¿Qué documentos necesito para alquilar un coche?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">documents</note>
+        <note priority="1" from="meaning">faq question</note>
+      </trans-unit>
+      <trans-unit id="5401905421073744508" datatype="html">
+        <source>You&apos;ll typically need a valid driver&apos;s license, a credit card in the renter&apos;s name for payment and deposit, and an additional form of identification like a passport.</source>
+        <target>Por lo general, necesitarás una licencia de conducir válida, una tarjeta de crédito a nombre del arrendatario para el pago y el depósito, y una forma adicional de identificación como un pasaporte.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">documents</note>
+        <note priority="1" from="meaning">faq answer</note>
+      </trans-unit>
+      <trans-unit id="3401245567069344171" datatype="html">
+        <source>Can I add an additional driver to my rental agreement?</source>
+        <target>¿Puedo añadir un conductor adicional a mi contrato de alquiler?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">additional driver</note>
+        <note priority="1" from="meaning">faq question</note>
+      </trans-unit>
+      <trans-unit id="6337975166486986860" datatype="html">
+        <source>Yes, additional drivers can usually be added to the rental agreement for a fee. They&apos;ll need to meet the same age and documentation requirements as the primary driver.</source>
+        <target>Sí, por lo general, se pueden añadir conductores adicionales al contrato de alquiler por una tarifa. Deberán cumplir con los mismos requisitos de edad y documentación que el conductor principal.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">additional driver</note>
+        <note priority="1" from="meaning">faq answer</note>
+      </trans-unit>
+      <trans-unit id="2224922068254030018" datatype="html">
+        <source>What insurance options are available?</source>
+        <target>¿Cuales son las opciones de seguro disponibles?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">insurance</note>
+        <note priority="1" from="meaning">faq question</note>
+      </trans-unit>
+      <trans-unit id="8240349230160633024" datatype="html">
+        <source>We offer various insurance options including Collision Damage Waiver (CDW), Loss Damage Waiver (LDW), Personal Accident Insurance (PAI), and Supplemental Liability Insurance (SLI). These options vary by location and may be subject to terms and conditions.</source>
+        <target>Ofrecemos varias opciones de seguro, incluyendo Exención de Daños por Colisión (CDW), Exención de Daños por Pérdida (LDW), Seguro de Accidentes Personales (PAI) y Seguro de Responsabilidad Suplementaria (SLI). Estas opciones varían según la ubicación y pueden estar sujetas a términos y condiciones.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">insurance</note>
+        <note priority="1" from="meaning">faq answer</note>
+      </trans-unit>
+      <trans-unit id="4763781256901525074" datatype="html">
+        <source>What&apos;s the fuel policy?</source>
+        <target>¿Cual es la política de combustible?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">fuel policy</note>
+        <note priority="1" from="meaning">faq question</note>
+      </trans-unit>
+      <trans-unit id="5662548739050883572" datatype="html">
+        <source>Our cars are typically rented with a full tank and should be returned with a full tank. You can choose to prepay for fuel at the time of rental or refill the tank yourself before returning the car.</source>
+        <target>Nuestros coches suelen alquilarse con el depósito lleno y deben devolverse con el depósito lleno. Puedes optar por pagar por adelantado el combustible en el momento del alquiler o rellenar el depósito tú mismo antes de devolver el coche.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">fuel policy</note>
+        <note priority="1" from="meaning">faq answer</note>
+      </trans-unit>
+      <trans-unit id="6024048812111640414" datatype="html">
+        <source>Can I modify or cancel my reservation?</source>
+        <target>¿Puedo modificar o cancelar mi reserva?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">reservation modification</note>
+        <note priority="1" from="meaning">faq question</note>
+      </trans-unit>
+      <trans-unit id="7912533679380553459" datatype="html">
+        <source>Yes, reservations can usually be modified or canceled online or by contacting our customer service, subject to the terms of your booking and any applicable fees.</source>
+        <target>Sí, por lo general, las reservas se pueden modificar o cancelar en línea o poniéndote en contacto con nuestro servicio de atención al cliente, según los términos de tu reserva y las tarifas aplicables.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">reservation modification</note>
+        <note priority="1" from="meaning">faq answer</note>
+      </trans-unit>
+      <trans-unit id="3413670894209186411" datatype="html">
+        <source>Do you offer child seats or other extras?</source>
+        <target>¿Ofrecen asientos infantiles u otros extras?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">extras</note>
+        <note priority="1" from="meaning">faq question</note>
+      </trans-unit>
+      <trans-unit id="5128758058731564303" datatype="html">
+        <source>Yes, we offer a range of extras including child seats, GPS devices, ski racks, and more. These can be selected during the booking process or added at the rental counter.</source>
+        <target>Sí, ofrecemos una variedad de extras que incluyen asientos infantiles, dispositivos GPS, portaequipajes para esquís y más. Estos pueden ser seleccionados durante el proceso de reserva o añadidos en el mostrador de alquiler.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">extras</note>
+        <note priority="1" from="meaning">faq answer</note>
+      </trans-unit>
+      <trans-unit id="5614015985717369385" datatype="html">
+        <source>Is there a mileage limit?</source>
+        <target>¿Hay un límite de millaje?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="description">mileage limit</note>
+        <note priority="1" from="meaning">faq question</note>
+      </trans-unit>
+      <trans-unit id="1489475582693236888" datatype="html">
+        <source>Most rentals come with unlimited mileage, but some promotions or special rates may have mileage restrictions. Please check your reservation details for specific information.</source>
+        <target>La mayoría de los alquileres vienen con millaje ilimitado, pero algunas promociones o tarifas especiales pueden tener restricciones de millaje. Por favor, verifica los detalles de tu reserva para información específica.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="description">mileage limit</note>
+        <note priority="1" from="meaning">faq answer</note>
+      </trans-unit>
+      <trans-unit id="6417506377611335073" datatype="html">
+        <source>Can I return the car to a different location?</source>
+        <target>¿Puedo devolver el coche a una ubicación diferente?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <note priority="1" from="description">different location</note>
+        <note priority="1" from="meaning">faq question</note>
+      </trans-unit>
+      <trans-unit id="5608508387389699772" datatype="html">
+        <source>That depends on the pickup location you choose. In most cases, we offer one-way rentals allowing you to return the car to a different location. Additional fees may apply based on the drop-off location.</source>
+        <target>Eso depende de la ubicación de recogida que elijas. En la mayoría de los casos, ofrecemos alquileres de solo ida que te permiten devolver el coche a una ubicación diferente. Pueden aplicarse tarifas adicionales según la ubicación de devolución.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="description">different location</note>
+        <note priority="1" from="meaning">faq answer</note>
+      </trans-unit>
+      <trans-unit id="6338087623788272233" datatype="html">
+        <source>What do I do in case of an emergency or breakdown?</source>
+        <target>¿Qué debo hacer en caso de emergencia o avería?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note priority="1" from="description">emergency</note>
+        <note priority="1" from="meaning">faq question</note>
+      </trans-unit>
+      <trans-unit id="4756627597833566876" datatype="html">
+        <source>In case of an emergency or breakdown, please contact our 24/7 roadside assistance hotline provided on your rental agreement. We&apos;ll provide necessary assistance promptly.</source>
+        <target>En caso de emergencia o avería, por favor contacta nuestra línea de asistencia en carretera 24/7 proporcionada en tu contrato de alquiler. Proporcionaremos la asistencia necesaria rápidamente.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/faq-accordion/faq-accordion.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="description">emergency</note>
+        <note priority="1" from="meaning">faq answer</note>
+      </trans-unit>
+      <trans-unit id="496153818413927506" datatype="html">
+        <source> Rent a car and explore the world </source>
+        <target>Alquila un coche y explora el mundo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+        <note priority="1" from="description">The main title of the landing page</note>
+        <note priority="1" from="meaning">Intro header</note>
+      </trans-unit>
+      <trans-unit id="4883225858862321466" datatype="html">
+        <source> Find the best deals on car rental and enjoy your trip with comfort and convenience. </source>
+        <target>Encuentra las mejores ofertas en alquiler de coches y disfruta tu viaje con comodidad y conveniencia.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+        <note priority="1" from="description">The subtitle of the landing page</note>
+        <note priority="1" from="meaning">Intro subtitle</note>
+      </trans-unit>
+      <trans-unit id="7512782672450409911" datatype="html">
+        <source> Top Worldwide Destinations </source>
+        <target>Principales destinos en todo el mundo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+        <note priority="1" from="description">the title of the destinations section</note>
+        <note priority="1" from="meaning">Section header</note>
+      </trans-unit>
+      <trans-unit id="4658557145308428939" datatype="html">
+        <source> Ready for a new adventure? </source>
+        <target>¿Preparado para una nueva aventura?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.html</context>
+          <context context-type="linenumber">62,64</context>
+        </context-group>
+        <note priority="1" from="description">call-to-action heading</note>
+      </trans-unit>
+      <trans-unit id="2944089544265036502" datatype="html">
+        <source> Frequently Asked Questions </source>
+        <target>Preguntas frecuentes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.html</context>
+          <context context-type="linenumber">81,83</context>
+        </context-group>
+        <note priority="1" from="description">the title of the frequently asked questions section</note>
+        <note priority="1" from="meaning">Section header</note>
+      </trans-unit>
+      <trans-unit id="7438074451238377405" datatype="html">
+        <source>Competitive prices</source>
+        <target>Precios competitivos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">competitive prices</note>
+        <note priority="1" from="meaning">benefit heading</note>
+      </trans-unit>
+      <trans-unit id="1758404324011555800" datatype="html">
+        <source>Get the best value for your money with our affordable and transparent rates.</source>
+        <target>Obtén el mejor valor por tu dinero con nuestras tarifas asequibles y transparentes.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">best value for money</note>
+        <note priority="1" from="meaning">benefit paragraph</note>
+      </trans-unit>
+      <trans-unit id="7175250079411633535" datatype="html">
+        <source>Wide selection of cars</source>
+        <target>Amplia selección de coches</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">wide selection of cars</note>
+        <note priority="1" from="meaning">benefit heading</note>
+      </trans-unit>
+      <trans-unit id="1233023309650994976" datatype="html">
+        <source>Choose from a variety of models and brands to suit your needs and preferences.</source>
+        <target>Elige entre una variedad de modelos y marcas que se adapten a tus necesidades y preferencias.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">variety of models and brands</note>
+        <note priority="1" from="meaning">benefit paragraph</note>
+      </trans-unit>
+      <trans-unit id="7957588449457414787" datatype="html">
+        <source>Convenient locations</source>
+        <target>Ubicaciones convenientes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">convenient locations</note>
+        <note priority="1" from="meaning">benefit heading</note>
+      </trans-unit>
+      <trans-unit id="7134992043266459783" datatype="html">
+        <source>Pick up and drop off your car at any of our locations across the countries.</source>
+        <target>Recoge y entrega tu coche en cualquiera de nuestras ubicaciones en todo el mundo.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">pick up and drop off across countries</note>
+        <note priority="1" from="meaning">benefit paragraph</note>
+      </trans-unit>
+      <trans-unit id="6261187845442946955" datatype="html">
+        <source>Exceptional customer support</source>
+        <target>Soporte excepcional al cliente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">exceptional customer support</note>
+        <note priority="1" from="meaning">benefit heading</note>
+      </trans-unit>
+      <trans-unit id="3664106665365689526" datatype="html">
+        <source>Our friendly and professional staff are always ready to assist you with any questions or issues.</source>
+        <target>Nuestro personal amable y profesional siempre está listo para ayudarte con cualquier pregunta o problema.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">friendly and professional staff</note>
+        <note priority="1" from="meaning">benefit paragraph</note>
+      </trans-unit>
+      <trans-unit id="478950115631210595" datatype="html">
+        <source>Dubai</source>
+        <target>Dubái</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="meaning">destination city</note>
+      </trans-unit>
+      <trans-unit id="8890039052152252257" datatype="html">
+        <source>Cairo</source>
+        <target>El Cairo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="meaning">destination city</note>
+      </trans-unit>
+      <trans-unit id="2544296238982690585" datatype="html">
+        <source>New York</source>
+        <target>Nueva York</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="meaning">destination city</note>
+      </trans-unit>
+      <trans-unit id="3160811958597025979" datatype="html">
+        <source>Rio de Janeiro</source>
+        <target>Río de Janeiro</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <note priority="1" from="meaning">destination city</note>
+      </trans-unit>
+      <trans-unit id="7162769250632652266" datatype="html">
+        <source>Barcelona</source>
+        <target>Barcelona</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="meaning">destination city</note>
+      </trans-unit>
+      <trans-unit id="5847048553760867105" datatype="html">
+        <source>Paris</source>
+        <target>París</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <note priority="1" from="meaning">destination city</note>
+      </trans-unit>
+      <trans-unit id="7312802697528571847" datatype="html">
+        <source>Rome</source>
+        <target>Roma</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <note priority="1" from="meaning">destination city</note>
+      </trans-unit>
+      <trans-unit id="2442676335680831766" datatype="html">
+        <source>London</source>
+        <target>Londres</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/home.component.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <note priority="1" from="meaning">destination city</note>
+      </trans-unit>
+      <trans-unit id="4273984446663000127" datatype="html">
+        <source>logo</source>
+        <target>logotipo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The alternative text for the logo image</note>
+        <note priority="1" from="meaning">Logo</note>
+      </trans-unit>
+      <trans-unit id="3303852097031321192" datatype="html">
+        <source>Terms &amp; Conditions</source>
+        <target>Términos y condiciones</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Navigation link</note>
+      </trans-unit>
+      <trans-unit id="759687838251957893" datatype="html">
+        <source>Contact Us</source>
+        <target>Contacto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Navigation link</note>
+      </trans-unit>
+      <trans-unit id="6117509307515429224" datatype="html">
+        <source> This web application was built by Nagi Ashraf, a .NET &amp; Angular full-stack developer. You can contact me at: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;mailto:{{ email }}&quot; class=&quot;hover:underline&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ email }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target>Esta aplicación web fue desarrollada por Nagui Áchraf, un desarrollador full-stack de .NET y Angular. Puedes contactarme en: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;mailto:{{ email }}&quot; class=&quot;hover:underline&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ email }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
+          <context context-type="linenumber">22,25</context>
+        </context-group>
+        <note priority="1" from="description">Footer text indicating the developer and an email address for contact</note>
+      </trans-unit>
+      <trans-unit id="7334224531029130874" datatype="html">
+        <source> Copyright © <x id="INTERPOLATION" equiv-text="{{ currentYear }}"/> Nagi. All rights reserved. </source>
+        <target> Derechos de autor © <x id="INTERPOLATION" equiv-text="{{ currentYear }}"/> Nagui. Todos los derechos reservados. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+        <note priority="1" from="description">The copyright text</note>
+        <note priority="1" from="meaning">Copyright</note>
+      </trans-unit>
+      <trans-unit id="6369720666807226912" datatype="html">
+        <source>Select Currency</source>
+        <target>Seleccionar moneda</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/currency-dialog/currency-dialog.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">The title of the dialog to select the preferred currency</note>
+        <note priority="1" from="meaning">Currencies dialog title</note>
+      </trans-unit>
+      <trans-unit id="4759598901299482881" datatype="html">
+        <source> No results found </source>
+        <target>No se encuentran resultados</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/search-form/locations-autocomplete/locations-autocomplete.component.html</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+        <note priority="1" from="description">The message when no
+            results are found</note>
+        <note priority="1" from="meaning">Locations autocomplete field search result</note>
+      </trans-unit>
+      <trans-unit id="684697931950801650" datatype="html">
+        <source>Pick-up Location</source>
+        <target>Ubicación de recogida</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/search-form/search-form.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">The label text for the pick-up
+        location input field</note>
+        <note priority="1" from="meaning">Pick-up location input field label</note>
+      </trans-unit>
+      <trans-unit id="6761006925406332197" datatype="html">
+        <source>Drop-off Location</source>
+        <target>Ubicación de devolución</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/search-form/search-form.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">The label text for the drop-off
+        location input field</note>
+        <note priority="1" from="meaning">Drop-off location input field label</note>
+      </trans-unit>
+      <trans-unit id="4695645540921914107" datatype="html">
+        <source> No drop-off locations found for <x id="INTERPOLATION" equiv-text="{{ searchForm.get(&quot;pickupLocation&quot;)?.value }}"/> </source>
+        <target>No se encontraron ubicaciones de devolución para <x id="INTERPOLATION" equiv-text="{{ searchForm.get(&quot;pickupLocation&quot;)?.value }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/search-form/search-form.component.html</context>
+          <context context-type="linenumber">71,74</context>
+        </context-group>
+        <note priority="1" from="description">The message when no drop-off
+                locations are found for the selected pickup location</note>
+        <note priority="1" from="meaning">Available drop-off locations</note>
+      </trans-unit>
+      <trans-unit id="8092242675908246774" datatype="html">
+        <source>Pick-up date</source>
+        <target>Fecha de recogida</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/search-form/search-form.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <note priority="1" from="description">The label text for the pick-up date input
+        field</note>
+        <note priority="1" from="meaning">Pick-up date input field label</note>
+      </trans-unit>
+      <trans-unit id="4057710736825318725" datatype="html">
+        <source>Time</source>
+        <target>Hora</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/search-form/search-form.component.html</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+        <note priority="1" from="description">The label text for the pick-up time input
+        field</note>
+        <note priority="1" from="meaning">Pick-up time input field label</note>
+      </trans-unit>
+      <trans-unit id="8928927923251247520" datatype="html">
+        <source>Drop-off date</source>
+        <target>Fecha de devolución</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/search-form/search-form.component.html</context>
+          <context context-type="linenumber">159</context>
+        </context-group>
+        <note priority="1" from="description">The label text for the drop-off date
+        input field</note>
+        <note priority="1" from="meaning">Drop-off date input field label</note>
+      </trans-unit>
+      <trans-unit id="8937039314389940873" datatype="html">
+        <source>Time</source>
+        <target>Hora</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/search-form/search-form.component.html</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+        <note priority="1" from="description">The label text for the drop-off time
+        input field</note>
+        <note priority="1" from="meaning">Drop-off time input field label</note>
+      </trans-unit>
+      <trans-unit id="1405096801746286103" datatype="html">
+        <source> Search </source>
+        <target>Buscar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/search-form/search-form.component.html</context>
+          <context context-type="linenumber">203,205</context>
+        </context-group>
+        <note priority="1" from="description">The button for submitting the search form</note>
+        <note priority="1" from="meaning">Search button</note>
+      </trans-unit>
+      <trans-unit id="4798511102542009405" datatype="html">
+        <source> Drop off at a different location </source>
+        <target>Dejar en una ubicación diferente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/search-form/search-form.component.html</context>
+          <context context-type="linenumber">219,221</context>
+        </context-group>
+        <note priority="1" from="description">the checkbox for choosing a drop-off
+      location different from the pick-up location</note>
+        <note priority="1" from="meaning">Different drop-off location checkbox</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

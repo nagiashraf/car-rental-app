@@ -1,0 +1,23 @@
+<button
+  type="button"
+  cdkOverlayOrigin
+  #trigger="cdkOverlayOrigin"
+  (click)="toggleDropdown()"
+>
+  <ng-content select=".display-value"></ng-content>
+</button>
+<ng-template
+  cdkConnectedOverlay
+  [cdkConnectedOverlayOrigin]="trigger"
+  [cdkConnectedOverlayOpen]="isOpen"
+  [cdkConnectedOverlayHasBackdrop]="true"
+  cdkConnectedOverlayBackdropClass="cdk-overlay-transparent-backdrop"
+  (backdropClick)="closeDropdown()"
+  (attach)="dropdownOpened.emit()"
+  (detach)="dropdownClosed.emit()"
+  cdkConnectedOverlayWidth="200px"
+>
+  <div @fade cdkTrapFocus class="w-full">
+    <ng-content select=".dropdown-panel"></ng-content>
+  </div>
+</ng-template>

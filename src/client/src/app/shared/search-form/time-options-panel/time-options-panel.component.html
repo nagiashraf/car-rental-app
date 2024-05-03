@@ -1,0 +1,14 @@
+<ul
+  cdkListbox
+  [cdkListboxValue]="[selectedTimeOption]"
+  [cdkListboxCompareWith]="compareTime"
+  (cdkListboxValueChange)="onTimeOptionSelected($event)"
+>
+  <li
+    *ngFor="let option of timeOptions"
+    [cdkOption]="option"
+    class="cursor-pointer text-center transition-colors duration-300 hover:bg-off-white"
+  >
+    {{ option.toFormat("hh:mm") }}
+  </li>
+</ul>
